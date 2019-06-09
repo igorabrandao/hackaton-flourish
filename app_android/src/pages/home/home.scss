@@ -1,0 +1,73 @@
+page-home {
+  /* ---------------------------------------------------------------------- */
+  /*	Basic Elements & Classes
+  /* ---------------------------------------------------------------------- */
+  [noScroll] {
+    overflow: hidden;
+  }
+  .home-background {
+      background-color: #95efe8;
+  }
+  .scroll-content {
+    margin-top: 0 !important;
+  }
+  .logo {
+    width: 80%;
+    height: auto;
+    padding-top: 30vh;
+  }
+  .appVersion {
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 12px;
+    margin-top: -5vh;
+    color: #777777;
+  }
+  .appUpdate {
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 12px;
+    margin-bottom: 6vh!important;
+    color: #777777;
+  }
+  span {
+    color: white;
+  }
+
+  .container {
+    color: white;
+    position: absolute;
+    top: 0;
+    padding: 5vw;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 2;
+  }
+  .loading-title {
+    text-align: center;
+    color: #000000;
+  }
+  .logo {
+    text-align: center;
+  }
+  .spacer {
+    margin-bottom: 5vh;
+  }
+  .spacerInfo {
+    margin-bottom: 35vh;
+  }
+
+  /* ---------------------------------------------------------------------- */
+  /*	Ion Spinner
+  /* ---------------------------------------------------------------------- */
+  ion-spinner {
+    transform: scale(1);
+  }
+
+  .spinner-crescent circle {
+    stroke: #00933d;
+  }
+}

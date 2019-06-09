@@ -1,0 +1,22 @@
+<ion-header no-border>
+    <ion-navbar transparent>
+    </ion-navbar>
+</ion-header>
+<ion-content [attr.noScroll]="shouldScroll" class="home-background">
+    <!--<ion-slides pager="false" autoplay="2000" loop="true" speed="1500" effect="fade">
+        <ion-slide class="slide-background swiper-no-swiping" *ngFor="let background of backgrounds"
+            [ngStyle]="{'background-image': 'url(' + background +')'}">
+        </ion-slide>
+    </ion-slides>-->
+    <div class="container">
+        <img class="logo" src="assets/img/logo/logo_name.png" />
+
+        <div class="spacer"></div>
+        <ion-spinner name="crescent"></ion-spinner>
+
+        <div class="spacerInfo"></div>
+
+        <ion-label floating class="appVersion">Versão do App {{appSettings.APP_VERSION}}</ion-label>
+        <ion-label floating class="appUpdate">Atualizado em {{appSettings.APP_LAST_UPDATE}}</ion-label>
+    </div>
+</ion-content>

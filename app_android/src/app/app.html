@@ -1,0 +1,22 @@
+<div class="{{global.state['theme']}}">
+    <!--Material Design Menu-->
+    <ion-menu [content]="content" id="menu-material">
+        <ion-content>
+            <div class="menu-header">
+                <!--material-design-background-->
+                <img class="user-avatar user-background round" src='assets/img/logo/Detail_fav_icon_128.png'/>
+            </div>
+            <ion-list no-lines>
+                <div *ngFor="let p of pages; let i=index">
+                    <hr *ngIf="(i == (pages.length - 1))">
+                    <button menuClose="left" ion-item detail-none (click)="openPage(p)">
+                        <ion-icon [name]="p.icon" item-left></ion-icon>
+                        {{p.title}}
+                    </button>
+                </div>
+            </ion-list>
+        </ion-content>
+    </ion-menu>
+    <!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+    <ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>
+</div>
